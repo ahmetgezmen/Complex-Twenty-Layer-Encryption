@@ -1,8 +1,8 @@
 # Complex-Twenty-Layer-Encryption Beta-1.0 (CTLE)
 
-#İndirmek istemiyorsanız.
+#If you don't want to download it.
 
-#Siteden indirmeden kullanabilirsiniz.
+#Can be used without downloading from the site. 
 
 #https://www.encrypt.calvesia.com
 
