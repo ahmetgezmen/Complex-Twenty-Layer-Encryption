@@ -9,3 +9,7 @@
 #Each code written is valid for 1 day only.
 
 #After 1 day, the same code cannot crack the password.
+
+#The code entered must be a number.
+
+#The code must have 17 digits.
