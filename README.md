@@ -1,5 +1,11 @@
 # Complex-Twenty-Layer-Encryption Beta-1.0 (CTLE)
-#
+
+#İndirmek istemiyorsanız.
+
+#Siteden indirmeden kullanabilirsiniz.
+
+#https://www.encrypt.calvesia.com
+
 #Using the Hello encryption tool is very simple.
 
 #Its use is available within the interface.
