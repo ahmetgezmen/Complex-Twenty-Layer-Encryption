@@ -20,7 +20,12 @@ year = datetimenow.year
 len_control = "false"
 while len_control == "false":
     try:
-        toDayCode = int(input("Please enter the code >>> "))
+        toDayCode = int(input("""
+The code entered must be a number.
+
+The code must have 17 digits.
+
+Please enter the code >>> """))
         temizle()
         todaycodepassword = str((day + month + year) * toDayCode)
         if len(todaycodepassword) >= 20:
@@ -561,6 +566,5 @@ while activity=="true":
         Thanks for using
         ****************
         """)
-
 
 
