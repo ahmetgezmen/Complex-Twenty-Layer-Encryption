@@ -10,6 +10,10 @@
 
 #Its use is available within the interface.
 
+#Currently only available for lowercase text 
+
+#Version for all texts will be coming soon. 
+
 #Don't forget  !!!
 
 #Each code written is valid for 1 day only.
