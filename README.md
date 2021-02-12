@@ -6,7 +6,7 @@
 
 #https://www.encrypt.calvesia.com
 
-#Using the Hello encryption tool is very simple.
+#Using the encryption tool is very simple.
 
 #Its use is available within the interface.
 
