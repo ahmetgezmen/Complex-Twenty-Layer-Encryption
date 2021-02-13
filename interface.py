@@ -3,7 +3,7 @@ from templates import mainleft, mainright, textedit
 
 print("""
 ****************
-Wellcome to CTLE
+Welcome to CTLE
 ****************
 """)
 def clear():
