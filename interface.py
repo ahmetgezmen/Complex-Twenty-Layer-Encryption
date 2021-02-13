@@ -59,8 +59,8 @@ while activity == "true":
         else:
             action_control = "true"
     if action == "1":
-        ana_mesaj = input("Please enter the message >>>")
-        textList = textedit.separate(ana_mesaj)
+        inputText = input("Please enter the message >>>")
+        textList = textedit.separate(inputText)
         outputleft = mainleft.sifrele(textList[0], todaycodepassword)
         outputright = mainright.sifrele(textList[1], todaycodepassword)
         output=outputleft+outputright
@@ -71,8 +71,8 @@ while activity == "true":
         devam = input("Please enter the continue...")
         clear()
     elif action == "2":
-        ana_mesaj = input("Please enter the encrypt >>>")
-        textList = textedit.separate(ana_mesaj)
+        inputText = input("Please enter the encrypt >>>")
+        textList = textedit.separate(inputText)
         outputleft = mainleft.sifrekır(textList[0], todaycodepassword)
         outputright = mainright.sifrekır(textList[1], todaycodepassword)
         output = outputleft + outputright
