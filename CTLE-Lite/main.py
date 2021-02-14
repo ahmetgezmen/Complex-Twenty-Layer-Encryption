@@ -8,7 +8,7 @@ Wellcome to CTLE
 
 """)
 
-def temizle():
+def clear():
     for y in range(50):
         print(" ")
 
@@ -26,7 +26,7 @@ while digit_control=="false":
         digit_control="false"
 
 
-    temizle()
+    clear()
          
 global text
 def wordlist():
@@ -68,393 +68,393 @@ oneone_listreverse.reverse()
 randomlist=[firstrandom,secondrandom,thirdrandom,fourthrandom,fifthrandom,sixthrandom,seventhrandom,eighthrandom,ninthrandom,tenthrandom]
 randomlistreverse=[firstrandom,secondrandom,thirdrandom,fourthrandom,fifthrandom,sixthrandom,seventhrandom,eighthrandom,ninthrandom,tenthrandom]
 randomlistreverse.reverse()
-def kaydır(sayı,liste):
+def slide(sayı,liste):
     for ssss in range(sayı):
-        ekleme = liste[-1]
+        listadd = liste[-1]
         liste.pop(-1)
-        liste.insert(0,ekleme)
-def rekaydır(sayı,liste):
+        liste.insert(0,listadd)
+def reslide(sayı,liste):
     for ssss in range(sayı):
-        ekleme = liste[0]
+        listadd = liste[0]
         liste.pop(0)
-        liste.append(ekleme)
-def firstcylinder(mesaj,number):
+        liste.append(listadd)
+def firstcylinder(message,number):
     outtext = ""
-    for x in mesaj:
+    for x in message:
         if x in firstlist:
-            sıra=firstlist.index(x)
-            kaydır(number, secondlist)
-            outtext = outtext+secondlist[sıra]
-            rekaydır(number,secondlist)
+            place=firstlist.index(x)
+            slide(number, secondlist)
+            outtext = outtext+secondlist[place]
+            reslide(number,secondlist)
 
         elif x in secondlist:
-            sıra=secondlist.index(x)
-            kaydır(number,firstlist)
-            outtext = outtext+firstlist[sıra]
-            rekaydır(number,firstlist)
+            place=secondlist.index(x)
+            slide(number,firstlist)
+            outtext = outtext+firstlist[place]
+            reslide(number,firstlist)
         else :
             outtext = outtext+x
     wordlist()
     return outtext
-def defusefirstcylinder(mesaj,number):
+def defusefirstcylinder(message,number):
     outtext = ""
-    for x in mesaj:
-        kaydır(number,secondlist)
-        kaydır(number,firstlist)
+    for x in message:
+        slide(number,secondlist)
+        slide(number,firstlist)
         if x in secondlist:
-            rekaydır(number,firstlist)
-            sıra = secondlist.index(x)
-            outtext = outtext + firstlist[sıra]
-            kaydır(number,firstlist)
+            reslide(number,firstlist)
+            place = secondlist.index(x)
+            outtext = outtext + firstlist[place]
+            slide(number,firstlist)
         elif x in firstlist:
-            rekaydır(number,secondlist)
-            sıra = firstlist.index(x)
-            outtext = outtext + secondlist[sıra]
-            kaydır(number,secondlist)
+            reslide(number,secondlist)
+            place = firstlist.index(x)
+            outtext = outtext + secondlist[place]
+            slide(number,secondlist)
 
         else:
             outtext = outtext + x
 
     wordlist()
     return outtext
-def secondcylinder(mesaj,number):
+def secondcylinder(message,number):
     outtext = ""
-    for x in mesaj:
+    for x in message:
         if x in firstlist:
-            sıra=firstlist.index(x)
-            kaydır(number, numbers)
-            outtext = outtext+numbers[sıra]
-            rekaydır(number,numbers)
+            place=firstlist.index(x)
+            slide(number, numbers)
+            outtext = outtext+numbers[place]
+            reslide(number,numbers)
 
         elif x in numbers:
-            sıra=numbers.index(x)
-            kaydır(number,firstlist)
-            outtext = outtext+firstlist[sıra]
-            rekaydır(number,firstlist)
+            place=numbers.index(x)
+            slide(number,firstlist)
+            outtext = outtext+firstlist[place]
+            reslide(number,firstlist)
         else :
             outtext = outtext+x
     wordlist()
     return outtext
-def defusesecondcylinder(mesaj,number):
+def defusesecondcylinder(message,number):
     outtext = ""
-    for x in mesaj:
-        kaydır(number,numbers)
-        kaydır(number,firstlist)
+    for x in message:
+        slide(number,numbers)
+        slide(number,firstlist)
         if x in numbers:
-            rekaydır(number,firstlist)
-            sıra = numbers.index(x)
-            outtext = outtext + firstlist[sıra]
-            kaydır(number,firstlist)
+            reslide(number,firstlist)
+            place = numbers.index(x)
+            outtext = outtext + firstlist[place]
+            slide(number,firstlist)
         elif x in firstlist:
-            rekaydır(number,numbers)
-            sıra = firstlist.index(x)
-            outtext = outtext + numbers[sıra]
-            kaydır(number,numbers)
+            reslide(number,numbers)
+            place = firstlist.index(x)
+            outtext = outtext + numbers[place]
+            slide(number,numbers)
         else:
             outtext = outtext + x
     wordlist()
     return outtext
-def thirdcylinder(mesaj,number):
+def thirdcylinder(message,number):
     outtext = ""
-    for x in mesaj:
+    for x in message:
         if x in numbers:
-            sıra=numbers.index(x)
-            kaydır(number, secondlist)
-            outtext = outtext+secondlist[sıra]
-            rekaydır(number,secondlist)
+            place=numbers.index(x)
+            slide(number, secondlist)
+            outtext = outtext+secondlist[place]
+            reslide(number,secondlist)
 
         elif x in secondlist:
-            sıra=secondlist.index(x)
-            kaydır(number,numbers)
-            outtext = outtext+str(numbers[sıra])
-            rekaydır(number,numbers)
+            place=secondlist.index(x)
+            slide(number,numbers)
+            outtext = outtext+str(numbers[place])
+            reslide(number,numbers)
         else :
             outtext = outtext+x
     wordlist()
     return outtext
-def defusethirdcylinder(mesaj,number):
+def defusethirdcylinder(message,number):
     outtext = ""
-    for x in mesaj:
-        kaydır(number, secondlist)
-        kaydır(number, numbers)
+    for x in message:
+        slide(number, secondlist)
+        slide(number, numbers)
         if x in secondlist:
-            rekaydır(number, numbers)
-            sıra = secondlist.index(x)
-            outtext = outtext + numbers[sıra]
-            kaydır(number, numbers)
+            reslide(number, numbers)
+            place = secondlist.index(x)
+            outtext = outtext + numbers[place]
+            slide(number, numbers)
         elif x in numbers:
-            rekaydır(number, secondlist)
-            sıra = numbers.index(x)
-            outtext = outtext + secondlist[sıra]
-            kaydır(number, secondlist)
+            reslide(number, secondlist)
+            place = numbers.index(x)
+            outtext = outtext + secondlist[place]
+            slide(number, secondlist)
         else:
             outtext = outtext + x
     wordlist()
     return outtext
-def fifthcylinder(mesaj,number):
+def fifthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
+    for x in message:
         if x in thirdlist:
-            sıra=thirdlist.index(x)
-            kaydır(number, fourthlist)
-            outtext = outtext+fourthlist[sıra]
-            rekaydır(number,fourthlist)
+            place=thirdlist.index(x)
+            slide(number, fourthlist)
+            outtext = outtext+fourthlist[place]
+            reslide(number,fourthlist)
 
         elif x in fourthlist:
-            sıra=fourthlist.index(x)
-            kaydır(number,thirdlist)
-            outtext = outtext+thirdlist[sıra]
-            rekaydır(number,thirdlist)
+            place=fourthlist.index(x)
+            slide(number,thirdlist)
+            outtext = outtext+thirdlist[place]
+            reslide(number,thirdlist)
         else :
             outtext = outtext+x
     wordlist()
     return outtext
-def defusefifthcylinder(mesaj,number):
+def defusefifthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
-        kaydır(number,fourthlist)
-        kaydır(number,thirdlist)
+    for x in message:
+        slide(number,fourthlist)
+        slide(number,thirdlist)
         if x in fourthlist:
-            rekaydır(number,thirdlist)
-            sıra = fourthlist.index(x)
-            outtext = outtext + thirdlist[sıra]
-            kaydır(number,thirdlist)
+            reslide(number,thirdlist)
+            place = fourthlist.index(x)
+            outtext = outtext + thirdlist[place]
+            slide(number,thirdlist)
         elif x in thirdlist:
-            rekaydır(number,fourthlist)
-            sıra = thirdlist.index(x)
-            outtext = outtext + fourthlist[sıra]
-            kaydır(number,fourthlist)
+            reslide(number,fourthlist)
+            place = thirdlist.index(x)
+            outtext = outtext + fourthlist[place]
+            slide(number,fourthlist)
         else:
             outtext = outtext + x
     wordlist()
     return outtext
-def fourthcylinder(mesaj,number):
+def fourthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
+    for x in message:
         if x in thirdlist:
-            sıra=thirdlist.index(x)
-            kaydır(number, numbers2)
-            outtext = outtext+numbers2[sıra]
-            rekaydır(number,numbers2)
+            place=thirdlist.index(x)
+            slide(number, numbers2)
+            outtext = outtext+numbers2[place]
+            reslide(number,numbers2)
 
         elif x in numbers2:
-            sıra=numbers2.index(x)
-            kaydır(number,thirdlist)
-            outtext = outtext+thirdlist[sıra]
-            rekaydır(number,thirdlist)
+            place=numbers2.index(x)
+            slide(number,thirdlist)
+            outtext = outtext+thirdlist[place]
+            reslide(number,thirdlist)
         else :
             outtext = outtext+x
     wordlist()
     return outtext
-def defusefourthcylinder(mesaj,number):
+def defusefourthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
-        kaydır(number,numbers2)
-        kaydır(number,thirdlist)
+    for x in message:
+        slide(number,numbers2)
+        slide(number,thirdlist)
         if x in numbers2:
-            rekaydır(number,thirdlist)
-            sıra = numbers2.index(x)
-            outtext = outtext + thirdlist[sıra]
-            kaydır(number,thirdlist)
+            reslide(number,thirdlist)
+            place = numbers2.index(x)
+            outtext = outtext + thirdlist[place]
+            slide(number,thirdlist)
         elif x in thirdlist:
-            rekaydır(number,numbers2)
-            sıra = thirdlist.index(x)
-            outtext = outtext + numbers2[sıra]
-            kaydır(number,numbers2)
+            reslide(number,numbers2)
+            place = thirdlist.index(x)
+            outtext = outtext + numbers2[place]
+            slide(number,numbers2)
         else:
             outtext = outtext + x
     wordlist()
     return outtext
-def sixthcylinder(mesaj,number):
+def sixthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
+    for x in message:
         if x in numbers2:
-            sıra=numbers2.index(x)
-            kaydır(number, fourthlist)
-            outtext = outtext+fourthlist[sıra]
-            rekaydır(number,fourthlist)
+            place=numbers2.index(x)
+            slide(number, fourthlist)
+            outtext = outtext+fourthlist[place]
+            reslide(number,fourthlist)
 
         elif x in fourthlist:
-            sıra=fourthlist.index(x)
-            kaydır(number,numbers2)
-            outtext = outtext+str(numbers2[sıra])
-            rekaydır(number,numbers2)
+            place=fourthlist.index(x)
+            slide(number,numbers2)
+            outtext = outtext+str(numbers2[place])
+            reslide(number,numbers2)
         else :
             outtext = outtext+x
     wordlist()
     return outtext
-def defusesixthcylinder(mesaj,number):
+def defusesixthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
-        kaydır(number, fourthlist)
-        kaydır(number, numbers2)
+    for x in message:
+        slide(number, fourthlist)
+        slide(number, numbers2)
         if x in fourthlist:
-            rekaydır(number, numbers2)
-            sıra = fourthlist.index(x)
-            outtext = outtext + numbers2[sıra]
-            kaydır(number, numbers2)
+            reslide(number, numbers2)
+            place = fourthlist.index(x)
+            outtext = outtext + numbers2[place]
+            slide(number, numbers2)
         elif x in numbers2:
-            rekaydır(number, fourthlist)
-            sıra = numbers2.index(x)
-            outtext = outtext + fourthlist[sıra]
-            kaydır(number, fourthlist)
+            reslide(number, fourthlist)
+            place = numbers2.index(x)
+            outtext = outtext + fourthlist[place]
+            slide(number, fourthlist)
         else:
             outtext = outtext + x
 
     wordlist()
     return outtext
-def seventhcylinder(mesaj,number):
+def seventhcylinder(message,number):
     outtext = ""
-    for x in mesaj:
+    for x in message:
         if x in fifthlist:
-            sıra=fifthlist.index(x)
-            kaydır(number, sixthlist)
-            outtext = outtext+sixthlist[sıra]
-            rekaydır(number,sixthlist)
+            place=fifthlist.index(x)
+            slide(number, sixthlist)
+            outtext = outtext+sixthlist[place]
+            reslide(number,sixthlist)
 
         elif x in sixthlist:
-            sıra=sixthlist.index(x)
-            kaydır(number,fifthlist)
-            outtext = outtext+fifthlist[sıra]
-            rekaydır(number,fifthlist)
+            place=sixthlist.index(x)
+            slide(number,fifthlist)
+            outtext = outtext+fifthlist[place]
+            reslide(number,fifthlist)
         else :
             outtext = outtext+x
     wordlist()
     return outtext
-def defuseseventhcylinder(mesaj,number):
+def defuseseventhcylinder(message,number):
     outtext = ""
-    for x in mesaj:
-        kaydır(number,sixthlist)
-        kaydır(number,fifthlist)
+    for x in message:
+        slide(number,sixthlist)
+        slide(number,fifthlist)
         if x in sixthlist:
-            rekaydır(number,fifthlist)
-            sıra = sixthlist.index(x)
-            outtext = outtext + fifthlist[sıra]
-            kaydır(number,fifthlist)
+            reslide(number,fifthlist)
+            place = sixthlist.index(x)
+            outtext = outtext + fifthlist[place]
+            slide(number,fifthlist)
         elif x in fifthlist:
-            rekaydır(number,sixthlist)
-            sıra = fifthlist.index(x)
-            outtext = outtext + sixthlist[sıra]
-            kaydır(number,sixthlist)
+            reslide(number,sixthlist)
+            place = fifthlist.index(x)
+            outtext = outtext + sixthlist[place]
+            slide(number,sixthlist)
         else:
             outtext = outtext + x
 
     wordlist()
     return outtext
-def eigthcylinder(mesaj,number):
+def eigthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
+    for x in message:
         if x in fifthlist:
-            sıra=fifthlist.index(x)
-            kaydır(number, numbers3)
-            outtext = outtext+numbers3[sıra]
-            rekaydır(number,numbers3)
+            place=fifthlist.index(x)
+            slide(number, numbers3)
+            outtext = outtext+numbers3[place]
+            reslide(number,numbers3)
 
         elif x in numbers3:
-            sıra=numbers3.index(x)
-            kaydır(number,fifthlist)
-            outtext = outtext+fifthlist[sıra]
-            rekaydır(number,fifthlist)
+            place=numbers3.index(x)
+            slide(number,fifthlist)
+            outtext = outtext+fifthlist[place]
+            reslide(number,fifthlist)
         else :
             outtext = outtext+x
     wordlist()
     return outtext
-def defuseeigthcylinder(mesaj,number):
+def defuseeigthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
-        kaydır(number,numbers3)
-        kaydır(number,fifthlist)
+    for x in message:
+        slide(number,numbers3)
+        slide(number,fifthlist)
         if x in numbers3:
-            rekaydır(number,fifthlist)
-            sıra = numbers3.index(x)
-            outtext = outtext + fifthlist[sıra]
-            kaydır(number,fifthlist)
+            reslide(number,fifthlist)
+            place = numbers3.index(x)
+            outtext = outtext + fifthlist[place]
+            slide(number,fifthlist)
         elif x in fifthlist:
-            rekaydır(number,numbers3)
-            sıra = fifthlist.index(x)
-            outtext = outtext + numbers3[sıra]
-            kaydır(number,numbers3)
+            reslide(number,numbers3)
+            place = fifthlist.index(x)
+            outtext = outtext + numbers3[place]
+            slide(number,numbers3)
         else:
             outtext = outtext + x
     wordlist()
     return outtext
-def ninthcylinder(mesaj,number):
+def ninthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
+    for x in message:
         if x in numbers3:
-            sıra=numbers3.index(x)
-            kaydır(number, sixthlist)
-            outtext = outtext+sixthlist[sıra]
-            rekaydır(number,sixthlist)
+            place=numbers3.index(x)
+            slide(number, sixthlist)
+            outtext = outtext+sixthlist[place]
+            reslide(number,sixthlist)
 
         elif x in sixthlist:
-            sıra=sixthlist.index(x)
-            kaydır(number,numbers3)
-            outtext = outtext+str(numbers3[sıra])
-            rekaydır(number,numbers3)
+            place=sixthlist.index(x)
+            slide(number,numbers3)
+            outtext = outtext+str(numbers3[place])
+            reslide(number,numbers3)
         else :
             outtext = outtext+x
     wordlist()
     return outtext
-def defuseninthcylinder(mesaj,number):
+def defuseninthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
-        kaydır(number, sixthlist)
-        kaydır(number, numbers3)
+    for x in message:
+        slide(number, sixthlist)
+        slide(number, numbers3)
         if x in sixthlist:
-            rekaydır(number, numbers3)
-            sıra = sixthlist.index(x)
-            outtext = outtext + numbers3[sıra]
-            kaydır(number, numbers3)
+            reslide(number, numbers3)
+            place = sixthlist.index(x)
+            outtext = outtext + numbers3[place]
+            slide(number, numbers3)
         elif x in numbers3:
-            rekaydır(number, sixthlist)
-            sıra = numbers3.index(x)
-            outtext = outtext + sixthlist[sıra]
-            kaydır(number, sixthlist)
+            reslide(number, sixthlist)
+            place = numbers3.index(x)
+            outtext = outtext + sixthlist[place]
+            slide(number, sixthlist)
         else:
             outtext = outtext + x
     wordlist()
     return outtext
-def tenthcylinder(mesaj,number):
+def tenthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
+    for x in message:
         if x in numbers3:
-            sıra = numbers3.index(x)
-            kaydır(number, firstlist)
-            outtext = outtext + firstlist[sıra]
-            rekaydır(number, firstlist)
+            place = numbers3.index(x)
+            slide(number, firstlist)
+            outtext = outtext + firstlist[place]
+            reslide(number, firstlist)
 
         elif x in firstlist:
-            sıra = firstlist.index(x)
-            kaydır(number, numbers3)
-            outtext = outtext + str(numbers3[sıra])
-            rekaydır(number, numbers3)
+            place = firstlist.index(x)
+            slide(number, numbers3)
+            outtext = outtext + str(numbers3[place])
+            reslide(number, numbers3)
         else:
             outtext = outtext + x
     wordlist()
     return outtext
-def defusetenthcylinder(mesaj,number):
+def defusetenthcylinder(message,number):
     outtext = ""
-    for x in mesaj:
-        kaydır(number, firstlist)
-        kaydır(number, numbers3)
+    for x in message:
+        slide(number, firstlist)
+        slide(number, numbers3)
         if x in firstlist:
-            rekaydır(number, numbers3)
-            sıra = firstlist.index(x)
-            outtext = outtext + numbers3[sıra]
-            kaydır(number, numbers3)
+            reslide(number, numbers3)
+            place = firstlist.index(x)
+            outtext = outtext + numbers3[place]
+            slide(number, numbers3)
         elif x in numbers3:
-            rekaydır(number, firstlist)
-            sıra = numbers3.index(x)
-            outtext = outtext + firstlist[sıra]
-            kaydır(number, firstlist)
+            reslide(number, firstlist)
+            place = numbers3.index(x)
+            outtext = outtext + firstlist[place]
+            slide(number, firstlist)
         else:
             outtext = outtext + x
 
     wordlist()
     return outtext
 
-def siseslestir(text,number,number2):
+def cylinderMathc(text,number,number2):
     if number==1:
         return firstcylinder(text,number2)
     elif number ==2 :
@@ -475,7 +475,7 @@ def siseslestir(text,number,number2):
         return ninthcylinder(text,number2)
     elif number == 0:
         return tenthcylinder(text,number2)
-def desiseslestir(text,number,number2):
+def cylinderDefuseMathc(text,number,number2):
     if number==1:
         return defusefirstcylinder(text,number2)
     elif number ==2 :
@@ -497,22 +497,22 @@ def desiseslestir(text,number,number2):
     elif number == 0:
         return defusetenthcylinder(text,number2)
 
-def sifrele(yazı):
+def encrypt(textMessage):
     y=0
     for x in randomlist:
-        yazı = siseslestir(yazı,x,oneone_list[y])
+        textMessage = cylinderMathc(textMessage,x,oneone_list[y])
         y+=1
-    return yazı
+    return textMessage
 
-def sifrekır(yazı):
+def defuse(textMessage):
     y=0
     for x in randomlistreverse:
-        yazı = desiseslestir(yazı,x,oneone_listreverse[y])
+        textMessage = cylinderDefuseMathc(textMessage,x,oneone_listreverse[y])
         y+=1
-    return yazı
+    return textMessage
 
 activity="true"
-temizle()
+clear()
 
 while activity=="true":
     action_control="true"
@@ -524,29 +524,29 @@ while activity=="true":
     [q]>>> Quit
          
          >>>""")
-        temizle()
+        clear()
         if action=="1" or action=="2" or action=="q":
             action_control="false"
         else :
             action_control="true"
     if action=="1":
-        ana_mesaj=input("Please enter the message >>>")
-        output = sifrele(ana_mesaj)
+        outputtext=input("Please enter the message >>>")
+        output = encrypt(outputtext)
         print("""
         Encrypt >>>
         {}
         """.format(output))
         devam=input("Please enter the continue...")
-        temizle()
+        clear()
     elif action=="2":
-        ana_mesaj=input("Please enter the encrypt >>>")
-        output = sifrekır(ana_mesaj)
+        outputtext=input("Please enter the encrypt >>>")
+        output = defuse(outputtext)
         print("""
         Defuse >>>
         {}
         """.format(output))
         devam=input("Please enter the continue...")
-        temizle()
+        clear()
     elif action=="q":
         activity="false"
         print("""
