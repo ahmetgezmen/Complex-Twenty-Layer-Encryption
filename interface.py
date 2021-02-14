@@ -61,8 +61,8 @@ while activity == "true":
     if action == "1":
         inputText = input("Please enter the message >>>")
         textList = textedit.separate(inputText)
-        outputleft = mainleft.sifrele(textList[0], todaycodepassword)
-        outputright = mainright.sifrele(textList[1], todaycodepassword)
+        outputleft = mainleft.encrypt(textList[0], todaycodepassword)
+        outputright = mainright.encrypt(textList[1], todaycodepassword)
         output=outputleft+outputright
         print("""
         Encrypt >>>
@@ -73,8 +73,8 @@ while activity == "true":
     elif action == "2":
         inputText = input("Please enter the encrypt >>>")
         textList = textedit.separate(inputText)
-        outputleft = mainleft.sifrekır(textList[0], todaycodepassword)
-        outputright = mainright.sifrekır(textList[1], todaycodepassword)
+        outputleft = mainleft.defuse(textList[0], todaycodepassword)
+        outputright = mainright.defuse(textList[1], todaycodepassword)
         output = outputleft + outputright
         print("""
         Defuse >>>
