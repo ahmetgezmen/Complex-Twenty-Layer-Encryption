@@ -15,34 +15,23 @@ year = datetimenow.year
 global todaycodepassword
 len_control = "false"
 while len_control == "false":
+    toDayCode = input("""
+            The code entered must be a number.
+
+            The code must have 17 digits.
+
+            Please enter the code >>> """)
+    clear()
     try:
-        toDayCode = int(input("""
-        The code entered must be a number.
-
-        The code must have 17 digits.
-
-        Please enter the code >>> """))
-        clear()
-        todaycodepassword = str((day + month + year) * toDayCode)
-        if len(todaycodepassword) >= 20:
-            len_control = "true"
-        else:
-            print("Try again...")
+        if toDayCode==int(toDayCode):
+            toDayCode = int(toDayCode)
     except:
-        clear()
-        toDayCode = int(input("""
-        The code entered must be a number.
-
-        The code must have 17 digits.
-
-        Please enter the code >>> """))
-        clear()
-        todaycodepassword = str((day + month + year) * toDayCode)
-        if len(todaycodepassword) >= 20:
-            len_control = "true"
-        else:
-            print("Try again...")
-
+        continue
+    todaycodepassword = str((day + month + year) * toDayCode)
+    if len(todaycodepassword) >= 20:
+        len_control = "true"
+    else:
+        print("Try again...")
 activity = "true"
 while activity == "true":
     action_control = "true"
