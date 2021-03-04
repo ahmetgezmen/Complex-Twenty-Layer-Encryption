@@ -1,4 +1,4 @@
-# Complex-Twenty-Layer-Encryption Beta-2.1 (CTLE)
+# Complex-Twenty-Layer-Encryption (CTLE)
 
 * If you don't want to download it.
 
