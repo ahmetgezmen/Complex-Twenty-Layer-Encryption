@@ -57,7 +57,7 @@ while activity == "true":
         Encrypt >>>
         {}
         """.format(output))
-        devam = input("Please enter the continue...")
+        enterTheContinue = input("Please enter the continue...")
         clear()
     elif action == "2":
         inputText = input("Please enter the encrypt >>>")
@@ -69,7 +69,7 @@ while activity == "true":
         Defuse >>>
         {}
         """.format(output))
-        devam = input("Please enter the continue...")
+        enterTheContinue = input("Please enter the continue...")
         clear()
     elif action == "q":
         activity = "false"
