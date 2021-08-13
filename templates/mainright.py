@@ -41,14 +41,14 @@ def codepassword(todaycodepassword):
     randomlistreverse.reverse()
 def slide(sayı,liste):
     for ssss in range(sayı):
-        ekleme = liste[-1]
+        pluss = liste[-1]
         liste.pop(-1)
-        liste.insert(0,ekleme)
+        liste.insert(0,pluss)
 def reslide(sayı,liste):
     for ssss in range(sayı):
-        ekleme = liste[0]
+        pluss = liste[0]
         liste.pop(0)
-        liste.append(ekleme)
+        liste.append(pluss)
 def firstcylinder(message,number):
     outtext = ""
     for x in message:
