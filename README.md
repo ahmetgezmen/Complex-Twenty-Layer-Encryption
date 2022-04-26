@@ -1,11 +1,5 @@
 # Complex-Twenty-Layer-Encryption (CTLE)
 
-* If you don't want to download it.
-
-* Can be used without downloading from the site. 
-
-* https://www.encrypt.calvesia.com
-
 * Using the encryption tool is very simple.
 
 * Please run the interface.py
